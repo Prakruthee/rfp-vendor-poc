@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RfpPoc</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h2 class="mx-auto my-0 text-uppercase">Vendor rfp poc</h2>
+        <!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2> -->
+        <!-- <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> -->
+      </div>
+    </div>
+  </header>
+
+  <body class="body">
+    <%= yield %>
+  </body>
+
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Your Website 2019
+    </div>
+  </footer>
+</html>

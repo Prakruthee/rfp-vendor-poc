@@ -1,0 +1,22 @@
+<div class="container">
+<div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6 landing-content-area">
+
+  <%= bootstrap_form_for(@rfp_request) do |f| %>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">choose topic
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Reference Project Evaluation</a></li>
+        <li><a href="#">Higher Quality Assurance Certifications</a></li>
+        <li><a href="#">Reference Project Evaluation</a></li>
+      </ul>
+    </div>
+    <div class="add-question">
+    <%= f.text_field :question, {label: 'Add a question'}%>
+    </div>
+    <%= f.submit "Submit" , {class: "btn btn-primary js-scroll-trigger"} %>
+  <% end %>
+</div>
+</div>

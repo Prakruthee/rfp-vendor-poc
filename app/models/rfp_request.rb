@@ -1,0 +1,2 @@
+class RfpRequest < ApplicationRecord
+end
